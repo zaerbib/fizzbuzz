@@ -11,7 +11,7 @@ import org.fizzbuzz.model.Fizz3;
  * Hello world!
  *
  */
-public class TiggerFizzBuzz 
+public class TriggerFizzBuzz 
 {
     public static void main( String[] args ) {
         lauchFizzBuzz();
@@ -21,7 +21,6 @@ public class TiggerFizzBuzz
     	List<Integer> list = IntStream.range(1, 101).boxed().collect(Collectors.toList());
         list.forEach(item -> {
         	if(new Fizz3(item).isFizz()) {
-        		
         		System.out.println("fizz"); 
         	}
         	if(new Buzz5(item).isBuzz()) {
