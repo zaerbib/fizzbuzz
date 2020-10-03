@@ -21,14 +21,15 @@ public class TriggerFizzBuzz
     	List<Integer> list = IntStream.range(1, 101).boxed().collect(Collectors.toList());
         list.forEach(item -> {
         	if(new Fizz3(item).isFizz()) {
-        		System.out.println("fizz"); 
+        		System.out.print("fizz"); 
         	}
         	if(new Buzz5(item).isBuzz()) {
-        		System.out.println("buzz");
+        		System.out.print("buzz");
         	}
         	if(!new Fizz3(item).isFizz() && !new Buzz5(item).isBuzz()) {
-        		System.out.println(item);
-        	}        	
+        		System.out.print(item);
+        	}  
+        	System.out.println();
         });
     }
 }
